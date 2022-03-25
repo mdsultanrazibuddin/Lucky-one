@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+.header-name{
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: rgb(111, 182, 226);
+}
+.content{
+  font-size: 25px;
+  margin-top: 0;
+  color: rgb(18, 116, 83);
+}

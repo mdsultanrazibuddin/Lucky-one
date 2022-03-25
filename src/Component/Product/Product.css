@@ -1,10 +1,14 @@
 
 .products{
+    background-color: #DEF6FF;
     width: 298px;
     height: 484px;
     border: 1px solid #95A0A7;
     border-radius: 20px;
-    margin: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+   
     
     
 }
@@ -12,6 +16,8 @@
     width: 250px;
     height: 250px;
     margin: 7px;
+    border-radius: 20px;
+    border: none;
     
 }
 .products-name{
@@ -23,10 +29,13 @@
 }
 .button-cart{
     width: 100%;
-    background: #FFE0B3;
+    background: #B3FFFB;
     border-radius: 0 0 10px 10px;
     
     
     
     
+}
+.button-cart:hover{
+    background-color: #71E9FF;
 }
