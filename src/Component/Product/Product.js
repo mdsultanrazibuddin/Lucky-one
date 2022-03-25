@@ -1,22 +1,25 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './Product.css'
 
-const Product = () => {
-  const [products, setProducts] = useState([])
-  useEffect( () =>{
-    fetch('product.json')
-    .then(res => res.json())
-    .then(product => setProducts(product))
-  }, [])
+const Product = (props) => {
+    const {name, id, img, price} =props.product
     return (
-       <nav className="cart">
-         <div className="product-container">
-            <h1>my name is razib={products.length}</h1>
-          </div>
-          <div className="order-container">
-            <h1>amr sonar bangla</h1>
-          </div>
-       </nav>
+        <div className='products'>
+            <img src={img} alt="" />
+            <h1>{id}</h1>
+            <p className='products-name'>{name}</p>
+            <p>Price : $ {price}</p>
+
+            <button className='button-cart'>
+                <p>Add to Cart</p>
+            </button>
+
+        </div>
+      
+        
+        
+
+
     );
 };
 
