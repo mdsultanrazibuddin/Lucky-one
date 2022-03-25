@@ -15,11 +15,21 @@
    border-radius: 8px;
    border:1px solid ;
    margin: 5px;
-   
-   
-   
-   
+ 
 }
 .btn:hover{
    background-color: #71E9FF;
+}
+.name{
+   color: rgb(111, 182, 226);
+   margin-bottom: 0;
+}
+.name:hover{
+   color: rgb(9, 99, 155);
+  cursor: pointer;
+}
+.text{
+   color: rgb(18, 116, 83);
+   margin-top: 0;
+   font-size: 25px;
 }

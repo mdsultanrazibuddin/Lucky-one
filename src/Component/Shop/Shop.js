@@ -26,8 +26,8 @@ const Shop = () => {
                }
            </div>
            <div className='order-summary'>
-               <h1>Order List</h1>
-               <p>Selected Books</p>
+               <h1 className='name'>Order List</h1>
+               <p className='text'>Selected Books</p>
                <div>
                    <button className='btn'>Choose Just One</button>
                    <br />
