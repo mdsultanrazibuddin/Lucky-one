@@ -26,7 +26,13 @@ const Shop = () => {
                }
            </div>
            <div className='order-summary'>
-               <h1>razib</h1>
+               <h1>Order List</h1>
+               <p>Selected Books</p>
+               <div>
+                   <button className='btn'>Choose Just One</button>
+                   <br />
+                   <button className='btn'>Remove All</button>
+               </div>
            </div>
        </div>
     );

@@ -8,3 +8,18 @@
    grid-template-columns: repeat(3, 1fr);
    gap:  45px;
 }
+.btn{
+   padding: 10px;
+   width: 50%;
+   background: #B3FFFB;
+   border-radius: 8px;
+   border:1px solid ;
+   margin: 5px;
+   
+   
+   
+   
+}
+.btn:hover{
+   background-color: #71E9FF;
+}
