@@ -5,12 +5,14 @@ import ('./Shop.css')
 const Shop = () => {
     const[products, setProducts] = useState([]);
     const[cart, setCart] = useState([])
+   
     // console.log(cart);
 
     const handleAddToCart = (products) =>{
         const newCart = [...cart, products]
         setCart(newCart);
     }
+
     
     useEffect(() =>{
         fetch("product.json")
@@ -40,9 +42,10 @@ const Shop = () => {
                            <h4 className='select' key={products.id}>{products.name}</h4>
                        ))
                    }
+                   
                </div>
                <div>
-                   <button  className='btn'>Choose Just One</button>
+                   {/* <button onClick={randomButton}  className='btn'>Choose Just One</button> */}
                    <br />
                    <button className='btn'>Remove All</button>
                </div>

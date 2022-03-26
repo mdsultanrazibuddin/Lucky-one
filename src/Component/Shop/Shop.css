@@ -38,3 +38,19 @@
    color:rgb(177, 75, 177);
    
 }
+
+@media screen and (max-width:500px) {
+   .product-container{
+       grid-template-columns: repeat(1, 1fr);
+       text-align: center;
+   }
+   .order-summary{
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+   }
+   .cart-container{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      text-align: center;
+   }
+}
