@@ -1,0 +1,10 @@
+.optional{
+    text-align: left;
+    padding-left: 20px;
+}
+.question{
+    color: #289760;
+}
+.answer{
+    color: #f533b4;
+}

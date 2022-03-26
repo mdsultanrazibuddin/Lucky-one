@@ -11,15 +11,14 @@ const Shop = () => {
         const newCart = [...cart, products]
         setCart(newCart);
     }
+    
     useEffect(() =>{
         fetch("product.json")
         .then(res => res.json())
         .then(data => setProducts(data))
     }, []);
 
-    // const handleAddToCart = (product) =>{
-    //     setCart(product);
-    // }
+    
     return (
        <div className="cart-container">
            <div className='product-container'>
@@ -43,9 +42,9 @@ const Shop = () => {
                    }
                </div>
                <div>
-                   <button className='btn'>Choose Just One</button>
+                   {/* <button onClick={rendom} className='btn'>Choose Just One</button> */}
                    <br />
-                   <button className='btn'>Remove All</button>
+                   {/* <button onClick={remove} className='btn'>Remove All</button> */}
                </div>
            </div>
        </div>
