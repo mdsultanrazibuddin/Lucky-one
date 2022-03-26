@@ -42,9 +42,9 @@ const Shop = () => {
                    }
                </div>
                <div>
-                   {/* <button onClick={rendom} className='btn'>Choose Just One</button> */}
+                   <button  className='btn'>Choose Just One</button>
                    <br />
-                   {/* <button onClick={remove} className='btn'>Remove All</button> */}
+                   <button className='btn'>Remove All</button>
                </div>
            </div>
        </div>
