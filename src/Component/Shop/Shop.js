@@ -2,21 +2,26 @@ import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import ('./Shop.css')
 
+
 const Shop = () => {
     const[products, setProducts] = useState([]);
-    const[cart, setCart] = useState([])
-    const[randoms, setRandoms] = useState([])
-   
-    // console.log(cart);
+    const[cart, setCart] = useState([]);
+    
 
     const handleAddToCart = (products) =>{
         const newCart = [...cart, products]
         setCart(newCart);
     }
-    const randomButton =() =>{
-        const getRandoms = cart[(Math.random() * cart.length) | 0];
-        setRandoms(getRandoms);
-       
+    
+   
+    const randomButton = () =>{
+         Math.floor(Math.random() *12)
+        for(const product of cart){
+            // console.log(product.id);
+            if(parseInt(product.id)=== Math.floor(Math.random() *12)){
+                alert(product.name)
+            }
+        }
     }
     const remove = () =>  {
          setCart ([]);
@@ -59,9 +64,7 @@ const Shop = () => {
                    <button onClick={randomButton}  className='btn'>Choose Just One</button>
                    <br />
 
-                   {randoms.map((product) => (
-                        <h1>{product.name}</h1>
-                   ))}
+                  
                    
                    <button onClick={remove} className='btn'>Remove All</button>
                </div>
