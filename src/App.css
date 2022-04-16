@@ -36,18 +36,3 @@
     transform: rotate(360deg);
   }
 }
-.header-name{
-  font-size: 50px;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: rgb(111, 182, 226);
-}
-.header-name:hover{
-  color: rgb(9, 99, 155);
-  cursor: pointer;
-}
-.content{
-  font-size: 25px;
-  margin-top: 0;
-  color: rgb(18, 116, 83);
-}
